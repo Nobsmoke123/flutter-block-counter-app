@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 
+// Use enums to represent the Events since it's not a complex app
 enum CounterEvent { increment, decrement }
 
 class CounterBloc extends Bloc<CounterEvent, int>{
