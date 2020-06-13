@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+//Import the BLoC package and the Flutter BLoC package
 import 'package:flutter_bloc/flutter_bloc.dart';
 import './core/counter_bloc.dart';
 
