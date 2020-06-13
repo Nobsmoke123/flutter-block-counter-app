@@ -67,6 +67,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                     FlatButton(
                       onPressed: (){
+                        //Trigger or notify the BLoC of a new event
                         counterBloc.add(CounterEvent.decrement);
                       },
                       child: Text(
