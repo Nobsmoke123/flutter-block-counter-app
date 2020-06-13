@@ -12,6 +12,7 @@ class CounterBloc extends Bloc<CounterEvent, int>{
   Stream<int> mapEventToState(CounterEvent event) async*{
     switch(event){
         case CounterEvent.decrement:
+            // Prevent the decrement function from going below 0
             yield state == 0 ? state : state -1;
             break;
 
